@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta content="application-name" content="Actividad 26">
+    <meta name="description" content="Estancia en CONALEP">
+    <meta name="keywords" content="Jesús, LGZús, Estancia, Conalep">
+    <meta name="author" content="JGG, lgzus01@protonmail.com">
+    <meta name="copyright" content="CONALEP 153">
+	<title> VOCALES </title>
+</head>
+<body>
+	<script>
+    	var cadena = prompt("Introduce una cadena de texto:");
+    	var numchar = cadena.length;    //Devuelve la longitud del string.
+    	cadena = cadena.toUpperCase();  //Devuelve el string en mayúsculas.
+    	var car;
+    	var contador = 0;
+    	var i;
+    	for (i = 0; i < numchar; i++) {
+	        car = cadena.charAt(i);    //recupera el caracter i del string.
+        	if ((car == "A") || (car == "E") || (car == "I") || (car == "O") || (car == "U")) {
+            	contador++;
+        	}
+    	}
+    	document.write("Número de Vocales: " + contador + ".");
+	</script>
+</body>
+</html>
